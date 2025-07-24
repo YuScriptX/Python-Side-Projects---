@@ -12,3 +12,5 @@ player = input("Make choice between rock, paper and scissors: ")
 print(f"Player: {player}")
 print(f"Computer: {computer}")
 
+if player == computer:
+    print("It's tie!")

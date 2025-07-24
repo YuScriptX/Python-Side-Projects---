@@ -3,22 +3,30 @@
 import random
 
 game = ("rock" , "paper" , "scissors")
-player = None
-computer = random.choice(game)
+playing = True
 
-while player not in game:
-    player = input("Make choice between rock, paper and scissors: ")
+while playing:
 
-print(f"Player: {player}")
-print(f"Computer: {computer}")
+    player = None
+    computer = random.choice(game)
 
-if player == computer:
-    print("It's tie!")
-elif player == "rock" and computer == "scissors":
-    print("You win!")
-elif player == "paper" and computer == "rock":
-    print("You win!")
-elif player == "scissors" and computer == "paper":
-    print("You win!")
-else:
-    print("You lose!")
+    while player not in game:
+        player = input("Make choice between rock, paper and scissors: ")
+
+    print(f"Player: {player}")
+    print(f"Computer: {computer}")
+
+    if player == computer:
+        print("It's tie!")
+    elif player == "rock" and computer == "scissors":
+        print("You win!")
+    elif player == "paper" and computer == "rock":
+        print("You win!")
+    elif player == "scissors" and computer == "paper":
+        print("You win!")
+    else:
+        print("You lose!")
+
+    if not input("You wanna play again? (y/n): ").lower() == "y":
+        break
+

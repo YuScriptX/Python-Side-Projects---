@@ -30,3 +30,4 @@ while playing:
     if not input("You wanna play again? (y/n): ").lower() == "y":
         break
 
+print("Thanks for playing!")

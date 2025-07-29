@@ -1,0 +1,78 @@
+# 💰 Budget Tracker (Python CLI)
+
+Een eenvoudige maar krachtige **Command-line Budget Tracker** gemaakt in Python.  
+Met dit programma kun je je inkomsten en uitgaven beheren, en zo je persoonlijke financiën beter volgen.
+
+---
+
+## 📌 Functionaliteiten
+
+- ✅ Inkomsten toevoegen  
+- ✅ Uitgaven toevoegen (met categorieën)  
+- ✅ Totaaloverzicht van inkomsten, uitgaven en saldo  
+- ✅ Alle transacties opvragen  
+- ✅ Gebruiksvriendelijk menu in de terminal
+
+---
+
+## 🛠️ Gebruikte technologieën
+
+- Python 3
+- Reine terminal-invoer (`input()`), geen externe libraries
+
+---
+
+## 🖥️ Voorbeeld (terminal output)
+
+==== Budget Tracker ====
+
+1. Inkomen toevoegen
+
+2. Uitgave toevoegen
+
+3. Toon balans
+
+4. Toon alle transacties
+
+5. Stoppen
+
+
+
+
+# 💰 Budget Tracker (Python CLI)
+
+A simple yet powerful **Command-line Budget Tracker** built in Python.  
+This program helps you manage your income and expenses, giving you better insight into your personal finances.
+
+---
+
+## 📌 Features
+
+- ✅ Add income  
+- ✅ Add expenses (with categories)  
+- ✅ View total income, expenses, and balance  
+- ✅ Display all transactions  
+- ✅ User-friendly terminal menu
+
+---
+
+## 🛠️ Technologies Used
+
+- Python 3  
+- Pure terminal input (`input()`), no external libraries
+
+---
+
+## 🖥️ Example (terminal output)
+
+==== Budget Tracker ====
+
+1. Add Income
+
+2. Add Expense
+
+3. Show Balance
+
+4. Show All Transactions
+
+5. Exit

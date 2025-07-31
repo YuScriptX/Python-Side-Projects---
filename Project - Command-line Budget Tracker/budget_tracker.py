@@ -13,3 +13,11 @@ def add_income():
     amount = float(input("Voer het bedrag in van je inkomen: €"))
     income_list.append(amount)
     print(f"Inkomen van €{amount:.2f} toegevoegd.")
+
+# Functie om een uitgave toe te voegen, inclusief categorie
+def add_expense():
+    amount = float(input("Voer het bedrag in van je uitgave: €"))
+    category = input("Voer categorie in (bijv. huur, auto, etc.): ")
+    expense_list.append({"bedrag": amount, "categorie": category})
+    print(f"Uitgave van €{amount:.2f} voor {category} toegevoegd.")
+

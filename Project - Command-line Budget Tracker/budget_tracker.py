@@ -8,7 +8,7 @@ income_list = []
 # Lijst om uitgaven op te slaan als dictionaries met bedrag en categorie
 expense_list = []
 
-# Functie om een inkomen toe te voegen
+# # Functie om een inkomen toe te voegen
 def add_income():
     amount = float(input("Voer het bedrag in van je inkomen: €"))
     income_list.append(amount)
@@ -21,3 +21,14 @@ def add_expense():
     expense_list.append({"bedrag": amount, "categorie": category})
     print(f"Uitgave van €{amount:.2f} voor {category} toegevoegd.")
 
+# Functie om de balans te tonen: totaal inkomen - totaal uitgaven
+def show_balance():
+    total_income = sum(income_list)
+    total_expense = sum([item["bedrag"] for item in expense_list])
+    show_balance = total_income - total_expense
+
+    print("\n--- Overzicht ---" )
+    print(f"Totaal inkomen: €{total_income:.2f}")
+    print(f"Totaal uitgaven: €{total_expense:.2f}")
+    print(f"Saldo           :€{show_balance:.2f}")
+    print("-----------------\n")

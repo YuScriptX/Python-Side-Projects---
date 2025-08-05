@@ -32,3 +32,14 @@ def show_balance():
     print(f"Totaal uitgaven: €{total_expense:.2f}")
     print(f"Saldo           :€{show_balance:.2f}")
     print("-----------------\n")
+
+# Functie om een overzicht van alle transacties te tonen
+def show_transactions():
+    print("\n--- Inkomsten ---")
+    for i, income in enumerate(income_list, 1):
+        print(f"{i}. €{income:.2f}")
+
+    print("\n--- Uitgaven ---")
+    for i, expense in enumerate(expense_list, 1):
+        print(f"{i}. €{expense["bedrag"]:.2f} - {expense["categorie"]}")
+    print()

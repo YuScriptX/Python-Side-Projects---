@@ -25,12 +25,12 @@ def add_expense():
 def show_balance():
     total_income = sum(income_list)
     total_expense = sum([item["bedrag"] for item in expense_list])
-    show_balance = total_income - total_expense
+    balance = total_income - total_expense
 
     print("\n--- Overzicht ---" )
     print(f"Totaal inkomen: €{total_income:.2f}")
     print(f"Totaal uitgaven: €{total_expense:.2f}")
-    print(f"Saldo           :€{show_balance:.2f}")
+    print(f"Saldo           :€{balance:.2f}")
     print("-----------------\n")
 
 # Functie om een overzicht van alle transacties te tonen
@@ -43,3 +43,37 @@ def show_transactions():
     for i, expense in enumerate(expense_list, 1):
         print(f"{i}. €{expense["bedrag"]:.2f} - {expense["categorie"]}")
     print()
+
+# ------------------------------------
+# Menu: Hoofdmenu van het programma
+# ------------------------------------
+
+def menu():
+    while True:
+        # Menuopties tonen
+        print("***** Budget Tracker *****")
+        print("1. Inkomen toevoegen")
+        print("2. Uitgave toevoegen")
+        print("3. Toon balans")
+        print("4. Toon alle transacties")
+        print("5. Exit")
+        print("**************************")
+
+        # Gebruiker moet een keuze maken
+        choice = input("Maak een keuze (1 - 5): ")
+
+        # Koppel keuzes aan functies
+        if choice == '1':
+            add_income()
+        elif choice == '2':
+            add_expense()
+        elif choice == '3':
+            show_balance()
+        elif choice == '4':
+            show_transactions()
+        elif choice == '5':
+            exit("Dank u!")
+        else:
+            print("Verkeerde keuze, kies tussen 1 & 5 ")
+
+menu() 

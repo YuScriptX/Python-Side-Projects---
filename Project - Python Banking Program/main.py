@@ -32,13 +32,16 @@ def main():
 
 
     while is_running:
+        print("********************")
         print("Banking Program")
+        print("********************")
         print("1.Show balance")
         print("2.Deposit")
         print("3.Withdraw")
         print("4.Exit")
-
+        print("********************")
         choice = input("Enter a choice between 1 & 4: ")
+
 
         if choice == '1':
             show_balance(balance)

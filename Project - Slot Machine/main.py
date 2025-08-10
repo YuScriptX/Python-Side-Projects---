@@ -1,10 +1,16 @@
 # Slot Machine
 
-def spin_row():
-    pass
+import random
 
-def print_row():
-    pass
+def spin_row():
+    symbols = ['🍉', '🍋', '🍒', '⭐']
+
+    results = []
+
+    return [random.choice(symbols) for _ in range(3)]
+
+def print_row(row):
+    print(" ".join(row))
 
 def get_payout():
     pass
@@ -37,6 +43,10 @@ def main():
 
         balance -= bet
 
+        row = spin_row()
+        print("Spinning...\n")
+        print_row(row)
+        
 
 if __name__ == '__main__':
     main()

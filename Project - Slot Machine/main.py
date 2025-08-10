@@ -27,5 +27,16 @@ def main():
 
         bet = int(bet)
 
+        if bet > balance:
+            print("It is bigger than your balance")
+            continue
+
+        if bet <= 0:
+            print("It must be bigger than 0")
+            continue
+
+        balance -= bet
+
+
 if __name__ == '__main__':
     main()

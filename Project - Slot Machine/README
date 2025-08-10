@@ -1,0 +1,67 @@
+# 🎰 Slot Machine Game
+
+A simple **Python Slot Machine** game playable in the terminal.  
+You start with a balance of **€1000** and place bets on three symbols.  
+If all symbols match, you win according to the corresponding multiplier.
+
+## 📜 Game Rules
+
+**Symbols & payouts:**
+
+| Symbol | Multiplier |
+|--------|------------|
+| 🍉     | x5         |
+| 🍋     | x8         |
+| 🍒     | x10        |
+| ⭐     | x100       |
+
+- Your bet is **deducted** from your balance before spinning.
+- If you win, your winnings are added to your balance.
+- You can keep playing as long as your balance is above 0.
+- You can stop at any time.
+
+---
+
+## 🖥️ Installation
+
+1. Make sure you have **Python 3** installed.  
+   Check this with:
+   ```bash
+   python --version
+
+
+
+
+
+
+
+# 🎰 Slot Machine Game
+
+Een eenvoudig **Python Slot Machine** spel dat in de terminal gespeeld kan worden.  
+Je start met een balans van **€1000** en kunt inzetten op drie symbolen.  
+Als alle symbolen gelijk zijn, win je volgens de bijbehorende multiplier.
+
+## 📜 Spelregels
+
+**Symbolen & uitbetalingen:**
+
+| Symbool | Multiplier |
+|---------|------------|
+| 🍉      | x5         |
+| 🍋      | x8         |
+| 🍒      | x10        |
+| ⭐      | x100       |
+
+- Je inzet wordt **afgetrokken** van je saldo voordat er wordt gesponnen.
+- Win je? Dan wordt je winst toegevoegd aan je saldo.
+- Je kunt blijven spelen zolang je saldo boven 0 is.
+- Je kunt op elk moment stoppen.
+
+---
+
+## 🖥️ Installatie
+
+1. Zorg dat je **Python 3** geïnstalleerd hebt.  
+   Controleer dit met:
+   ```bash
+   python --version

@@ -1,0 +1,41 @@
+# 🧙‍♂️ Hogwarts Sorting Quiz
+
+## 🇬🇧 English
+
+A simple **Harry Potter Hogwarts Sorting Quiz** written in Python.  
+Answer the questions and find out which house suits you best based on your answers.  
+This project was created as a beginner-friendly Python exercise.
+
+### 📜 Features
+- 3 multiple-choice questions
+- Score tracking for Gryffindor, Ravenclaw, Hufflepuff, and Slytherin
+- Uses `input()` and `int()` for user interaction
+
+### ▶️ How to run
+1. Make sure you have Python installed (`python3 --version`).
+2. Download or clone this repository.
+3. Run:
+   ```bash
+   python main.py
+
+
+
+
+# 🧙‍♂️ Hogwarts Sorteer Quiz
+
+## 🇳🇱 Nederlands
+Een eenvoudige Harry Potter Hogwarts Sorteer Quiz geschreven in Python.
+Beantwoord de vragen en ontdek welk huis het beste bij jou past op basis van je antwoorden.
+Dit project is gemaakt als een beginner-vriendelijke Python oefening.
+
+### 📜 Functies
+- 3 meerkeuzevragen
+- Punten bijhouden voor Gryffindor, Ravenclaw, Hufflepuff en Slytherin
+- Gebruik van input() en int() voor gebruikersinteractie
+
+### ▶️ Hoe te gebruiken
+1. Zorg dat Python geïnstalleerd is (python3 --version).
+2. Download of clone deze repository.
+3. Voer uit:
+    ```bash
+   python main.py

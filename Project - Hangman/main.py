@@ -28,17 +28,29 @@ hangman_art = {
         "/ \\"),    
 }
 
-def display_man():
+def display_man(wrong_guesses):
     pass
 
-def display_hint():
+def display_hint(hint):
     pass
 
-def display_answer():
+def display_answer(answer):
     pass
 
 def main():
-    pass
+    answer = random.choice(words)
+    hint = ["_"] * len(answer)
+    wrong_guesses = 0
+    max_wrong = len(hangman_art) - 1
+    guessed_letters = set()
+    is_running = True
+
+    while is_running:
+        print()
+        display_man(wrong_guesses)
+        display_hint(hint)
+
+        guess = input("Enter a letter: ").lower().strip()   
 
 if __name__ == "__main__":
     main()

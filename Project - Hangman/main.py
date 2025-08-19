@@ -33,10 +33,10 @@ def display_man(wrong_guesses):
         print(line)
 
 def display_hint(hint):
-    pass
+    print(" ".join(hint))
 
 def display_answer(answer):
-    pass
+    print(" ".join(answer))
 
 def main():
     answer = random.choice(words)
@@ -51,7 +51,12 @@ def main():
         display_man(wrong_guesses)
         display_hint(hint)
 
-        guess = input("Enter a letter: ").lower().strip()   
+        guess = input("Enter a letter: ").lower().strip()
+
+        if guess in answer:
+            for i in range(len(answer)):
+                if answer[i] == guess:
+                    hint[i] == guess   
 
 if __name__ == "__main__":
     main()

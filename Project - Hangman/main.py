@@ -27,3 +27,18 @@ hangman_art = {
         "/|\\",
         "/ \\"),    
 }
+
+def display_man():
+    pass
+
+def display_hint():
+    pass
+
+def display_answer():
+    pass
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()

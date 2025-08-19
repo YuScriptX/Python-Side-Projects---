@@ -29,7 +29,8 @@ hangman_art = {
 }
 
 def display_man(wrong_guesses):
-    pass
+    for line in hangman_art[wrong_guesses]:
+        print(line)
 
 def display_hint(hint):
     pass

@@ -42,21 +42,41 @@ def main():
     answer = random.choice(words)
     hint = ["_"] * len(answer)
     wrong_guesses = 0
-    max_wrong = len(hangman_art) - 1
-    guessed_letters = set()
+    guesses_letters = set()
     is_running = True
 
     while is_running:
-        print()
         display_man(wrong_guesses)
         display_hint(hint)
+        guess = input("Enter a letter: ").lower()
 
-        guess = input("Enter a letter: ").lower().strip()
+        if len(guess) != 1 or not guess.isalpha():
+            print("Invalid")
+            continue
+
+        if guess in guesses_letters:
+            print(f"{guess} is already guessed")
+            continue
+
+        guesses_letters.add(guess)
 
         if guess in answer:
             for i in range(len(answer)):
                 if answer[i] == guess:
-                    hint[i] == guess   
+                    hint[i] = guess
+        else:
+            wrong_guesses += 1
+
+        if "_" not in hint:
+            display_man(wrong_guesses)
+            display_answer(answer)
+            print("YOU WIN!")
+            is_running = False
+        elif wrong_guesses >= len(hangman_art) - 1:
+            display_man(wrong_guesses)
+            display_answer(answer)
+            print("YOU LOSE!")
+            is_running = False   
 
 if __name__ == "__main__":
     main()

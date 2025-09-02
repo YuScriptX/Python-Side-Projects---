@@ -4,6 +4,8 @@ import time
 
 my_time = int(input("Enter the time in sec: "))
 
-time.sleep(5)
+for x in range(0, my_time):
+    print(x)
+    time.sleep(1)
 
 print("Hi Guys!")

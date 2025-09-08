@@ -26,5 +26,5 @@ for question in questions:
         print("CORRECT!")
     else:
         print("INCORRECT!")
-        
+        print(f"{answers[question_num]} is the correct answer")
     question_num += 1 

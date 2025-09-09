@@ -9,3 +9,8 @@ menu = {"soda": 3.00,
 
 cart = []
 total = 0
+
+print("----- MENU -----")
+for key, value in menu.items():
+    print(f"{key:10}: €{value:.2f}")
+print("----------------")

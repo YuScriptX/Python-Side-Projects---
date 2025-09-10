@@ -9,4 +9,28 @@ guesses = 0
 is_running = True
 
 print("Number Guessing Game")
+print("---------------------------")
 print(f"Select a number between {lowest_num} & {highest_num}")
+
+while is_running:
+
+    guess = input("Enter your guess: ")
+
+    if guess.isdigit():
+        guess = int(guess)
+        guesses += 1
+
+        if guess < lowest_num or guess > highest_num:
+            print("Out of range")
+            print(f"Select a number between {lowest_num} & {highest_num}")
+        elif guess < answer:
+            print("Too low! Try again!")
+        elif guess > answer:
+            print("Too high! Try again!")
+        else:
+            print(f"CORRECT! The answer was {answer}")
+            print(f"Number of guesses: {guesses}")
+            is_running = False
+    else:
+        print("Invalid guess")
+        print(f"Select a number between {lowest_num} & {highest_num}")

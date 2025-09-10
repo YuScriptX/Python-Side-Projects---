@@ -8,4 +8,5 @@ answer = random.randint(lowest_num , highest_num)
 guesses = 0
 is_running = True
 
-print(answer)
+print("Number Guessing Game")
+print(f"Select a number between {lowest_num} & {highest_num}")

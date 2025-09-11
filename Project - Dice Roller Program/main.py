@@ -42,3 +42,9 @@ dice_art = {
         "│ ●     ● │",
         "└─────────┘")
 }
+
+dice = []
+total = 0
+num_of_dice = int(input("How many dice?: "))
+
+dice.append(random.randint(1,6))

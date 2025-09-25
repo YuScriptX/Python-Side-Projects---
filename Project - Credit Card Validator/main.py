@@ -8,4 +8,9 @@ card_number = input("Enter a credit card #: ")
 card_number = card_number.replace("-", "")
 card_number = card_number.replace(" ", "")
 card_number = card_number[::-1]
-print(card_number)
+
+for x in card_number[::2]:
+    sum_odd_digits += int(x)
+
+print(sum_odd_digits)
+

@@ -21,3 +21,7 @@ for x in card_number[1::2]:
 
 total = sum_odd_digits + sum_even_digits
 
+if total % 10 == 0:
+    print("VALID")
+else:
+    print("INVALID")

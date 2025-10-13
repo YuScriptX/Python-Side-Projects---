@@ -15,7 +15,11 @@ def set_alarm(alarm_time):
 
         if current_time == alarm_time:
             print("WAKE UP!")
-            
+
+            pygame.mixer.init()
+            pygame.mixer.music.load(sound_file)
+            pygame.mixer.music.play()
+
             is_running = False
 
         time.sleep(1)

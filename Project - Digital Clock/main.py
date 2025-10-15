@@ -7,7 +7,7 @@ from PyQt5.QtCore import QTimer, QTime, Qt
 class DigitalClock(QWidget):
     def __init__(self):
         super().__init__()
-        self.time_label = QLabel("12:00:00",self)
+        self.time_label = QLabel(self)
         self.timer = QTimer(self)
         self.initUI()
 
@@ -27,7 +27,11 @@ class DigitalClock(QWidget):
                                       "color: #ADD8E6")
         self.setStyleSheet("background-color: grey;")
 
-    
+        self.update_time()
+
+    def update_time(self):
+        current_time = QTime.currentTime().toString("hh:mm:ss")
+        self.time_label.setText(current_time)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

@@ -27,6 +27,9 @@ class DigitalClock(QWidget):
                                       "color: #ADD8E6")
         self.setStyleSheet("background-color: grey;")
 
+        self.timer.timeout.connect(self.update_time)
+        self.timer.start(1000)
+
         self.update_time()
 
     def update_time(self):

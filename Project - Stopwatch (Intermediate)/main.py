@@ -20,11 +20,20 @@ class Stopwatch(QWidget):
 
         vbox = QVBoxLayout()
         vbox.addWidget(self.time_label)
-        vbox.addWidget(self.start_button)
-        vbox.addWidget(self.stop_button)
-        vbox.addWidget(self.reset_button)
+
 
         self.setLayout(vbox)
+
+        self.setGeometry(300, 200, 300, 100)
+        self.time_label.setAlignment(Qt.AlignCenter)
+
+        hbox = QHBoxLayout()
+
+        hbox.addWidget(self.start_button)
+        hbox.addWidget(self.stop_button)
+        hbox.addWidget(self.reset_button)
+
+        vbox.addLayout(hbox)
 
     def start(self):
         pass

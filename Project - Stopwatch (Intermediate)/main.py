@@ -15,7 +15,23 @@ class Stopwatch(QWidget):
         self.timer = QTimer(self)
         self.initUI()
 
-    
+    def initUI(self):
+        pass
+
+    def start(self):
+        pass
+
+    def stop(self):
+        pass
+
+    def reset(self):
+        pass
+
+    def format_time(self, time):
+        pass
+
+    def update_display(self):
+        pass
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
